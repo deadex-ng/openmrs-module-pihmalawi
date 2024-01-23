@@ -128,6 +128,7 @@ public class EncounterTypeBundle extends AbstractMetadataBundle {
 
         install(EncounterTypes.TEEN_CLUB_INITIAL);
         install(EncounterTypes.TEEN_CLUB_FOLLOWUP);
+        install(EncounterTypes.TEEN_CLUB_INTAKE_SURVEY);
 
     }
 

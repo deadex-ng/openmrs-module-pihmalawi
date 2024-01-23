@@ -34,7 +34,6 @@
                 <td style="padding: 1px" rowspan="2">Height</td>
                 <td style="padding: 1px" rowspan="2">BMI</td>
                 <td style="padding: 1px" rowspan="2">Likuni Phala(Kgs)</td>
-
             </tr>
         </thead>
         <tbody class="visit-table-body">

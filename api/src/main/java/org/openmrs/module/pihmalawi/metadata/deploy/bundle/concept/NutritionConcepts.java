@@ -32,7 +32,7 @@ public class NutritionConcepts extends VersionedPihConceptBundle {
 
     @Override
     public int getVersion() {
-        return 5;
+        return 7;
     }
 
     @Override
@@ -101,7 +101,7 @@ public class NutritionConcepts extends VersionedPihConceptBundle {
 
         Concept lknphl=install(new ConceptBuilder("496c382a-5c92-4f31-8f87-2507f8b749fc")
                 .datatype(numeric)
-                .conceptClass(question)
+                .conceptClass(test)
                 .name("64da387c-875b-4b2e-8169-2d4a9ccaf1cc","Likuni Phala (Kgs)",Locale.ENGLISH,ConceptNameType.FULLY_SPECIFIED)
                 .build());
     }

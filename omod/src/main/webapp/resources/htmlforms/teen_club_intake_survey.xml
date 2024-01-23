@@ -1,0 +1,144 @@
+<htmlform formUuid="DCB073DD-0E55-4C1B-A892-A2BF4AD0CE0F"
+          formName="Teen Club Intake Survey"
+          formEncounterType="7fdb740a-5236-4a34-a8d8-6971e930292e"
+          formVersion="1.0">
+    <macros>
+        <macro key="interviewDate" value="655ff71c-977f-11e1-8993-905e29aff6c1"/>
+        <macro key="interviewerName" value="6563db98-977f-11e1-8993-905e29aff6c1"/>
+        <macro key="villageName" value="6560b5ee-977f-11e1-8993-905e29aff6c1"/>
+        <macro key="healthFacility" value="657d1108-977f-11e1-8993-905e29aff6c1"/>
+        <macro key="gender" value="65615422-977f-11e1-8993-905e29aff6c1"/>
+        <macro key="male" value="65615210-977f-11e1-8993-905e29aff6c1"/>
+        <macro key="female" value="6561531e-977f-11e1-8993-905e29aff6c1"/>
+        <macro key="currentlyInSchool" value="656cd770-977f-11e1-8993-905e29aff6c1"/>
+        <macro key="no" value="6557646c-977f-11e1-8993-905e29aff6c1"/>
+        <macro key="yes" value="65576354-977f-11e1-8993-905e29aff6c1"/>
+        <macro key="currentSchoolClass" value="204fd036-1e5e-4f16-82c0-ef8b423c1f88"/>
+        <macro key="nenoLocations" expression="fn.globalProperty('pihmalawi.systemLocationsTag')"/>
+    </macros>
+
+    <!-- Flowsheet table view -->
+    <ifMode mode="VIEW" include="true">
+
+        <table class="visit-table data-entry-table">
+            <thead class="visit-table-header">
+                <tr> <!-- Label row -->
+                    <td style="padding: 1px;" >Visit Date</td>
+                    <td rowspan="1" style="padding: 1px;" >Interview Date</td>
+                    <td colspan="1">Interviewer Name</td>
+                    <td colspan="1">Village Name</td>
+                    <td colspan="1" style="padding: 1px">Health Facility</td>
+                    <td colspan="1" style="padding: 1px" >Gender</td>
+                    <td colspan="1" style="padding: 1px" >Currently In School</td>
+                    <td colspan="1" style="padding: 1px" >Current School Class</td>
+                </tr>
+            </thead>
+            <tbody class="visit-table-body">
+                <tr class="visit-table-row">
+                    <td class="nowrap visit-date">
+                        <encounterDate/>
+                    </td>
+                    <td class="nowrap visit-date">
+                        <!-- Interview Date -->
+                        <obs conceptId="$interviewDate"/>
+                    </td>
+                    <td style="padding: 1px;" >
+                        <!-- Village Name -->
+                        <obs conceptId="$interviewerName"/>
+                    </td>
+                    <td style="padding: 1px;" >
+                        <!-- Interviewer Name -->
+                        <obs conceptId="$villageName"/>
+                    </td>
+                    <td style="padding: 1px;">
+                        <!-- Health Facility-->
+                        <encounterLocation/>
+                    </td>
+                    <td style="padding: 1px;">
+                        <!-- Gender-->
+                        <obs conceptId="$gender" />
+                    </td>
+                    <td style="padding: 1px;" >
+                        <!-- Age -->
+                        <obs conceptId="$currentlyInSchool" />
+                    </td>
+                    <td style="padding: 1px;" >
+                        <!-- Age -->
+                        <obs conceptId="$currentSchoolClass" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </ifMode>
+
+    <!-- Data entry view -->
+    <ifMode mode="VIEW" include="false">
+        <div class="section-container">
+            <h4 style="font-style: italic;">
+                <b>Nutrition Card For Adults</b>
+                <span style="padding-left:50px;">Version 1</span>
+                <span id="patientUuid" style="display:none"><lookup expression="patient.uuid"/></span>
+                <span style="padding-left:50px;">
+                    <b style="padding-right:10px;">Nutrition no: </b>
+                    <b>
+                        <lookup complexExpression="#foreach( $id in $patientIdentifiers.get(&quot;Nutrition Program Number&quot;) ) $!id #end" />
+                    </b>
+                </span>
+            </h4>
+
+            <span style="display:none"><encounterProvider default="16576" /></span> <!-- Set provider to a default as not used -->
+            <table class="visit-edit-table">
+                <tr>
+                    <th>Visit Date</th>
+                    <td><lookup complexExpression="#if($encounter) $ui.format($encounter.encounterDatetime) #else $ui.format($context.defaultEncounterDate) #end" />
+                        <span id="visitDateError" class="error field-error" style="display:none;color: rgb(255, 0, 0);"></span>
+                        <span style="display:none"><encounterDate id="visitDate" size="20" /></span>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Interview Date</th>
+                    <td>
+                        <obs conceptId="$interviewDate" id="interviewDateInput"/>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Name of Interviewer</th>
+                    <td>
+                        <obs conceptId="$interviewerName" id="interviewerNameInput"/>
+                    </td>
+                </tr>
+                <tr class="focus-field">
+                    <th>Village Name</th>
+                    <td>
+                        <obs conceptId="$villageName" id="villageNameInput"/>
+                    </td>
+                </tr>
+                <tr class="focus-field">
+                    <th>Health Facility</th>
+                    <td>
+                        <encounterLocation id="visitLocation" tags="$nenoLocations"/>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Gender</th>
+                    <td>
+                        <obs conceptId="$gender" style="radio" answerConceptIds="$male,$female" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>Currently In School</th>
+                    <td>
+                        <obs conceptId="$currentlyInSchool" style="radio" answerConceptIds="$yes,$no" />
+                    </td>
+                </tr>
+                <tr class="focus-field">
+                    <th>Current School Class</th>
+                    <td>
+                        <obs conceptId="$currentSchoolClass" id="currentSchoolClassInput"/>
+                    </td>
+                </tr>
+            </table>
+            <submit />
+        </div>
+    </ifMode>
+</htmlform>

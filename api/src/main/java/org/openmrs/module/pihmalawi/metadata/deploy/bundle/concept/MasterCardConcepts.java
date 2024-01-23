@@ -173,7 +173,7 @@ public class MasterCardConcepts extends VersionedPihConceptBundle {
 
     @Override
     public int getVersion() {
-        return 26;
+        return 40;
     }
 
     @Override
@@ -1557,5 +1557,32 @@ public class MasterCardConcepts extends VersionedPihConceptBundle {
                 .conceptClass(question)
                 .name("d3b47ef7-e6eb-4621-bf87-95defc407819", "Oil given to patient(Liters)", Locale.ENGLISH, ConceptNameType.FULLY_SPECIFIED)
                 .build());
+
+        Concept literacy = install(new ConceptBuilder("53ed12e1-62d1-4e22-96c5-7795e9d0a35f")
+                .datatype(coded)
+                .conceptClass(question)
+                .name("99c3a46f-a175-4f5e-a42b-152d1bd2afc1", "Literate", Locale.ENGLISH, ConceptNameType.FULLY_SPECIFIED)
+                .answers(yes, no)
+                .build());
+
+        Concept inSchool = install(new ConceptBuilder("1e51fc87-2b6c-4eab-9c81-00e4c9497edf")
+                .datatype(coded)
+                .conceptClass(question)
+                .name("59efd41b-3acf-4d6f-bb4d-3463122e8f78", "In school", Locale.ENGLISH, ConceptNameType.FULLY_SPECIFIED)
+                .answers(yes, no)
+                .build());
+
+        Concept dropoutClass = install(new ConceptBuilder("cb75aca6-6234-42b7-aa2b-3cedc4b3ad21")
+                .datatype(text)
+                .conceptClass(misc)
+                .name("09ccef3a-c874-44b0-a925-eeebed915207", "Drop School class", Locale.ENGLISH, ConceptNameType.FULLY_SPECIFIED)
+                .build());
+
+        Concept schoolClass = install(new ConceptBuilder("204fd036-1e5e-4f16-82c0-ef8b423c1f88")
+                .datatype(text)
+                .conceptClass(misc)
+                .name("e41656fb-a12d-4201-b692-a8f41748263f", "Current School class", Locale.ENGLISH, ConceptNameType.FULLY_SPECIFIED)
+                .build());
+
     }
 }

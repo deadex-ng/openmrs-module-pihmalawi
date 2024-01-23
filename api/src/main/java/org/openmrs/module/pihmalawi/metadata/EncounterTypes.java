@@ -542,4 +542,10 @@ public class EncounterTypes {
 
         public String description() {return "followup PDC Nutrition encounter";}
     };
+
+    public static  EncounterTypeDescriptor TEEN_CLUB_INTAKE_SURVEY = new EncounterTypeDescriptor() {
+        public String uuid() {return "7fdb740a-5236-4a34-a8d8-6971e930292e";}
+        public String name() {return "TEEN_CLUB_INTAKE_SURVEY";}
+        public String description() {return "teen club intake survey encounter";}
+    };
 }

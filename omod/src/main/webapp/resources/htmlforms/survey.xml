@@ -1,0 +1,342 @@
+<htmlform formUuid="46790f06-1b9e-4688-a39f-d0081b3ac687" formName="Survey"
+          formEncounterType="7fdb740a-5236-4a34-a8d8-6971e930292e" formVersion="1.0">
+    <macros>
+        <macro key="interviewDate" value="655ff71c-977f-11e1-8993-905e29aff6c1"/>
+        <macro key="interviewerName" value="9562d3b9-11cf-4522-a062-e9aaa94f38b4"/>
+        <macro key="villageName" value="6560b5ee-977f-11e1-8993-905e29aff6c1"/>
+        <macro key="healthFacility" value="657d1108-977f-11e1-8993-905e29aff6c1"/>
+        <macro key="gender" value="65615422-977f-11e1-8993-905e29aff6c1"/>
+        <macro key="male" value="65615210-977f-11e1-8993-905e29aff6c1"/>
+        <macro key="female" value="6561531e-977f-11e1-8993-905e29aff6c1"/>
+        <macro key="age" value="6566247a-977f-11e1-8993-905e29aff6c1"/>
+        <macro key="literate" value="53ed12e1-62d1-4e22-96c5-7795e9d0a35f"/>
+        <macro key="currentlyInSchool" value="1e51fc87-2b6c-4eab-9c81-00e4c9497edf"/>
+        <macro key="currentSchoolClass" value="204fd036-1e5e-4f16-82c0-ef8b423c1f88"/>
+        <macro key="no" value="6557646c-977f-11e1-8993-905e29aff6c1"/>
+        <macro key="yes" value="65576354-977f-11e1-8993-905e29aff6c1"/>
+        <macro key="dropSchoolClass" value="cb75aca6-6234-42b7-aa2b-3cedc4b3ad21"/>
+        <macro key="getaJob" value="b0cccb19-5744-4d7c-a20f-5357d8eedfa8"/>
+        <macro key="business" value="3b7d62ef-c044-4cfa-bf44-ba3fcdea70ee"/>
+        <macro key="furtherEducation" value="534c8fba-8077-445a-a2dd-ab90d5af8090"/>
+        <macro key="farming" value="aac9cf84-ebe7-41c1-b2e9-06514af2c1f8"/>
+        <macro key="other" value="656cce7e-977f-11e1-8993-905e29aff6c1"/>
+        <macro key="plansAfterSchool" value="e1eef37b-98f5-4c86-9560-c090e5b1731f"/>
+        <macro key="biologicalParent" value="ce0af2a6-d6f4-4d13-8af3-ea4ad378a653"/>
+        <macro key="bothParents" value="49e133bf-efc9-49f9-91af-1cc26fa88ec6"/>
+        <macro key="grandParents" value="aa109c28-7745-480e-a3c2-d0bc9f1a2719"/>
+        <macro key="elderRelative" value="d0c7636d-9d5e-4c1c-9656-e76689398ce5"/>
+        <macro key="relatives" value="dadec55d-864d-4f33-bfc2-06fccccd6a2a"/>
+        <macro key="parentsLocation" value="b7d8d419-2451-44ec-9b6b-9b855f9cc443"/>
+        <macro key="primaryGuardian" value="807bcfed-6fb9-4ca3-bb46-8286a51906a2"/>
+        <macro key="reasonForSingleParent" value="0b6a3722-c4d3-44ba-afd4-6185eba83849"/>
+        <macro key="parentsDivorced" value="bf061dbe-7ead-43a9-a8db-a6869b2daea1"/>
+        <macro key="parentsDied" value="c4c3dd23-48a1-4f24-9415-8865ef45b9e0"/>
+        <macro key="numberOfHouseholdMembers" value="441ed2b2-623a-42a0-aa7b-d16327cfc697"/>
+        <macro key="gas" value="03fb4666-62b6-4ae3-a086-f6c0e6d9b9c3"/>
+        <macro key="electricity" value="4f3d9103-a1d2-40cb-953b-9aeeb9950147"/>
+        <macro key="solar" value="8f8f610c-5db5-4631-85d8-4e4c413e65c5"/>
+        <macro key="paraffinLamp" value="1ecdd3d4-3dbc-4e50-a17a-d64f84ed9886"/>
+        <macro key="torch" value="499d2f21-86e8-4e81-93fa-f44b3c3e09b6"/>
+        <macro key="lightingSource" value="79f2c8bd-68ee-4dde-9af4-3f594052df1b"/>
+        <macro key="drinkingWaterSource" value="9243dd06-bb9a-4b7d-8bbc-e82d16c30e65"/>
+        <macro key="pipedWater" value="41b2529c-e8d9-4f28-92cd-4b7847c23f5e"/>
+        <macro key="dugWell" value="d9ba6164-60ca-4540-a080-01b4c24f64d2"/>
+        <macro key="springWater" value="2d901246-1c15-495c-8102-02b3a7fbfbc3"/>
+        <macro key="bottledWater" value="0db5816d-8349-400d-a617-013f1e9658f7"/>
+        <macro key="borehole" value="c07c34ad-08e7-469c-a3d5-3c93f46ff5f8"/>
+        <macro key="toiletAtHome" value="9bcdf631-c727-48e7-98fd-795fcd544d32"/>
+        <macro key="kindOfToilet" value="353df499-ffb9-4ca5-a63a-0ec6fb029e94"/>
+        <macro key="flushToilet" value="219fa3bd-df79-456c-a188-3b57cbe9440e"/>
+        <macro key="pitLatrine" value="76a54a76-5a16-4767-9655-d3e1f0f6f13f"/>
+        <macro key="firewood" value="ae3b79fe-4d32-46a0-a756-f6bfc4c19c73"/>
+        <macro key="charcoal" value="13635bd8-b5f2-470a-9ff1-80fd465f6f53"/>
+        <macro key="bottledGas" value="235ff344-df36-4ae9-bbf6-a8d7828ec5ff"/>
+        <macro key="paraffin" value="673079b3-1af7-4213-a6ed-02c20905cbf2"/>
+        <macro key="cookingEnergy" value="5755fdfc-586b-4816-9223-f45a1422e20a"/>
+        <macro key="earth" value="47baac9f-9d34-4d5f-961a-cdfaac2c590c"/>
+        <macro key="cement" value="254e6d65-e086-40c8-94fe-887200292c60"/>
+        <macro key="tiles" value="2ea253ad-2a61-4d2d-8896-42fda71fd170"/>
+        <macro key="typeOfHouseFloor" value="07f1ce88-dd02-47ff-8f0c-b39fc8616345"/>
+        <macro key="typeOfHouseWalls" value="9c7bd3d9-096f-4f33-9781-2b3a23fee8ed"/>
+        <macro key="mud" value="64f04067-ba95-42d1-84c0-d1b9fee1d03c"/>
+        <macro key="nenoLocations" expression="fn.globalProperty('pihmalawi.systemLocationsTag')"/>
+    </macros>
+    <!-- Flowsheet table view -->
+    <ifMode mode="VIEW" include="true">
+
+        <table class="visit-table data-entry-table">
+            <thead class="visit-table-header">
+                <tr> <!-- Label row -->
+                    <td style="padding: 1px;" >Visit Date</td>
+                    <td rowspan="1" style="padding: 1px;" >Interview Date</td>
+                    <td colspan="1">Interviewer Name</td>
+                    <td colspan="1">Village Name</td>
+                    <td colspan="1" style="padding: 1px">Health Facility</td>
+                    <td colspan="1" style="padding: 1px" >Gender</td>
+                    <td colspan="1" style="padding: 1px" >Are you literate?</td>
+                    <td colspan="1" style="padding: 1px" >Are you in school?</td>
+                    <td colspan="1" style="padding: 1px" >Dropped out class</td>
+                    <td colspan="1" style="padding: 1px" >Current School Class</td>
+                    <td colspan="1" style="padding: 1px" >Plans after school</td>
+                    <td colspan="1" style="padding: 1px" >Primary Guardian</td>
+                    <td colspan="1" style="padding: 1px" >Parent's Location</td>
+                    <td colspan="1" style="padding: 1px" >Staying with single parent</td>
+                    <td colspan="1" style="padding: 1px" >Number of household members</td>
+                    <td colspan="1" style="padding: 1px" >Main source of lighting</td>
+                    <td colspan="1" style="padding: 1px" >Main source of drinking water</td>
+                    <td colspan="1" style="padding: 1px" >Toilet at home</td>
+                    <td colspan="1" style="padding: 1px" >Kind of toilet facility</td>
+                    <td colspan="1" style="padding: 1px" >Fuel used for cooking</td>
+                    <td colspan="1" style="padding: 1px" >Type of home flooring</td>
+                    <td colspan="1" style="padding: 1px" >Type of walls your house made of</td>
+                </tr>
+            </thead>
+            <tbody class="visit-table-body">
+                <tr class="visit-table-row">
+                    <td class="nowrap visit-date">
+                        <encounterDate/>
+                    </td>
+                    <td class="nowrap visit-date">
+                        <!-- Interview Date -->
+                        <obs conceptId="$interviewDate"/>
+                    </td>
+                    <td style="padding: 1px;" >
+                        <!-- Village Name -->
+                        <obs conceptId="$interviewerName"/>
+                    </td>
+                    <td style="padding: 1px;" >
+                        <!-- Interviewer Name -->
+                        <obs conceptId="$villageName"/>
+                    </td>
+                    <td style="padding: 1px;">
+                        <!-- Health Facility-->
+                        <encounterLocation/>
+                    </td>
+                    <td style="padding: 1px;">
+                        <!-- Gender-->
+                        <obs conceptId="$gender" />
+                    </td>
+                    <td style="padding: 1px;" >
+                        <!-- literate -->
+                        <obs conceptId="$literate" />
+                    </td>
+                    <td style="padding: 1px;" >
+                        <!-- currently in school -->
+                        <obs conceptId="$currentlyInSchool" />
+                    </td>
+                    <td style="padding: 1px;" >
+                        <!-- Age -->
+                        <obs conceptId="$dropSchoolClass" />
+                    </td>
+                    <td style="padding: 1px;" >
+                        <!-- Age -->
+                        <obs conceptId="$currentSchoolClass" />
+                    </td>
+                    <td style="padding: 1px;" >
+                        <!-- Age -->
+                        <obs conceptId="$plansAfterSchool" />
+                    </td>
+                    <td style="padding: 1px;" >
+                        <!-- Age -->
+                        <obs conceptId="$primaryGuardian" />
+                    </td>
+                    <td style="padding: 1px;" >
+                        <!-- Age -->
+                        <obs conceptId="$parentsLocation" />
+                    </td>
+                    <td style="padding: 1px;" >
+                        <!-- Age -->
+                        <obs conceptId="$reasonForSingleParent" />
+                    </td>
+                    <td style="padding: 1px;" >
+                        <!-- Age -->
+                        <obs conceptId="$numberOfHouseholdMembers" />
+                    </td>
+                    <td style="padding: 1px;" >
+                        <!-- Age -->
+                        <obs conceptId="$lightingSource" />
+                    </td>
+                    <td style="padding: 1px;" >
+                        <!-- Age -->
+                        <obs conceptId="$drinkingWaterSource" />
+                    </td>
+                    <td style="padding: 1px;" >
+                        <!-- Age -->
+                        <obs conceptId="$toiletAtHome" />
+                    </td>
+                    <td style="padding: 1px;" >
+                        <!-- Age -->
+                        <obs conceptId="$kindOfToilet" />
+                    </td>
+                    <td style="padding: 1px;" >
+                        <!-- Age -->
+                        <obs conceptId="$cookingEnergy" />
+                    </td>
+                    <td style="padding: 1px;" >
+                        <!-- Age -->
+                        <obs conceptId="$typeOfHouseFloor" />
+                    </td>
+                    <td style="padding: 1px;" >
+                        <!-- Age -->
+                        <obs conceptId="$typeOfHouseWalls" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </ifMode>
+
+    <!-- Data entry view -->
+    <ifMode mode="VIEW" include="false">
+        <div class="section-container">
+            <h4 style="font-style: italic;">
+                <b>Nutrition Card For Adults</b>
+                <span style="padding-left:50px;">Version 1</span>
+                <span id="patientUuid" style="display:none"><lookup expression="patient.uuid"/></span>
+                <span style="padding-left:50px;">
+                    <b style="padding-right:10px;">Nutrition no: </b>
+                    <b>
+                        <lookup complexExpression="#foreach( $id in $patientIdentifiers.get(&quot;Nutrition Program Number&quot;) ) $!id #end" />
+                    </b>
+                </span>
+            </h4>
+
+            <span style="display:none"><encounterProvider default="16576" /></span> <!-- Set provider to a default as not used -->
+            <table class="visit-edit-table">
+                <tr>
+                    <th>Visit Date</th>
+                    <td><lookup complexExpression="#if($encounter) $ui.format($encounter.encounterDatetime) #else $ui.format($context.defaultEncounterDate) #end" />
+                        <span id="visitDateError" class="error field-error" style="display:none;color: rgb(255, 0, 0);"></span>
+                        <span style="display:none"><encounterDate id="visitDate" size="20" /></span>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Interview Date</th>
+                    <td>
+                        <obs conceptId="$interviewDate" id="interviewDateInput"/>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Name of Interviewer</th>
+                    <td>
+                        <obs conceptId="$interviewerName" id="interviewerNameInput"/>
+                    </td>
+                </tr>
+                <tr class="focus-field">
+                    <th>Village Name</th>
+                    <td>
+                        <obs conceptId="$villageName" id="villageNameInput"/>
+                    </td>
+                </tr>
+                <tr class="focus-field">
+                    <th>Health Facility</th>
+                    <td>
+                        <encounterLocation id="visitLocation" tags="$nenoLocations"/>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Gender</th>
+                    <td>
+                        <obs conceptId="$gender" style="radio" answerConceptIds="$male,$female" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>Are you literate ?</th>
+                    <td>
+                        <obs conceptId="$literate" style="radio" answerConceptIds="$yes,$no" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>Are you in school? </th>
+                    <td>
+                        <obs conceptId="$currentlyInSchool" style="radio" answerConceptIds="$yes,$no" />
+                    </td>
+                </tr>
+                <tr class="focus-field">
+                    <th>Dropped out School Class</th>
+                    <td>
+                        <obs conceptId="$dropSchoolClass" id="dropSchoolClassInput"/>
+                    </td>
+                </tr>
+                <tr class="focus-field">
+                    <th>Current School Class</th>
+                    <td>
+                        <obs conceptId="$currentSchoolClass" id="currentSchoolClassInput"/>
+                    </td>
+                </tr>
+                <tr class="focus-field">
+                    <th>Plans after school</th>
+                    <td>
+                        <obs conceptId="$plansAfterSchool" style="radio" answerConceptIds="$getaJob, $business, $furtherEducation, $other" />
+                    </td>
+                </tr>
+                <tr class="focus-field">
+                    <th>Primary Guardian</th>
+                    <td>
+                        <obs conceptId="$primaryGuardian" style="radio" answerConceptIds="$biologicalParent, $bothParents, $grandParents, $elderRelative, $relatives, $other" />
+                    </td>
+                </tr>
+                <tr class="focus-field">
+                    <th>Parent's Location</th>
+                    <td>
+                        <obs conceptId="$parentsLocation" id="parentsLocationInput"/>
+                    </td>
+                </tr>
+                <tr class="focus-field">
+                    <th>Reason for staying with single parent</th>
+                    <td>
+                        <obs conceptId="$reasonForSingleParent" style="radio" answerConceptIds="$parentsDivorced, $parentsDied, $other" />
+                    </td>
+                </tr>
+                <tr class="focus-field">
+                    <th>Including yourself, how many people live in your household right now?</th>
+                    <td>
+                        <obs conceptId="$numberOfHouseholdMembers" id="numberOfHouseholdMembersInput"/>
+                    </td>
+                </tr>
+                <tr class="focus-field">
+                    <th>What is the main source of energy for lighting in the household?</th>
+                    <td>
+                        <obs conceptId="$lightingSource" style="radio" answerConceptIds="$electricity, $solar,$gas,$paraffinLamp,$torch, $other" />
+                    </td>
+                </tr>
+                <tr class="focus-field">
+                    <th>What is the main source of drinking water in the household?</th>
+                    <td>
+                        <obs conceptId="$drinkingWaterSource" style="radio" answerConceptIds="$pipedWater, $dugWell, $springWater,$bottledWater,$borehole, $other" />
+                    </td>
+                </tr>
+                <tr class="focus-field">
+                    <th>Do you have a toilet at home?</th>
+                    <td>
+                        <obs conceptId="$toiletAtHome" style="radio" answerConceptIds="$yes, $no" />
+                    </td>
+                </tr>
+                <tr class="focus-field">
+                    <th>What kind of toilet facility do members of your household usually use?</th>
+                    <td>
+                        <obs conceptId="$kindOfToilet" style="radio" answerConceptIds="$flushToilet, $pitLatrine, $other" />
+                    </td>
+                </tr>
+                <tr class="focus-field">
+                    <th>What type of fuel does your household mainly use for cooking?</th>
+                    <td>
+                        <obs conceptId="$cookingEnergy" style="radio" answerConceptIds="$electricity, $firewood, $charcoal,$bottledGas, $paraffin, $other" />
+                    </td>
+                </tr>
+                <tr class="focus-field">
+                    <th>What type of flooring does your home have?</th>
+                    <td>
+                        <obs conceptId="$typeOfHouseFloor" style="radio" answerConceptIds="$earth, $cement, $tiles, $other" />
+                    </td>
+                </tr>
+                <tr class="focus-field">
+                    <th>What type of walls does is your house made of?</th>
+                    <td>
+                        <obs conceptId="$typeOfHouseWalls" style="radio" answerConceptIds="$cement, $mud, $other" />
+                    </td>
+                </tr>
+            </table>
+            <submit />
+        </div>
+    </ifMode>
+</htmlform>
