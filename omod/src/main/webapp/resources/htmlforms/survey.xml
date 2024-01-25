@@ -59,6 +59,8 @@
         <macro key="typeOfHouseFloor" value="07f1ce88-dd02-47ff-8f0c-b39fc8616345"/>
         <macro key="typeOfHouseWalls" value="9c7bd3d9-096f-4f33-9781-2b3a23fee8ed"/>
         <macro key="mud" value="64f04067-ba95-42d1-84c0-d1b9fee1d03c"/>
+        <macro key="grass" value="5eec9066-13b0-4f9f-a236-0fbaa8d7a836"/>
+        <macro key="typeOfHouseRoof" value="7ee0bf27-9473-48d0-b9e5-cdfe67d34ab2"/>
         <macro key="nenoLocations" expression="fn.globalProperty('pihmalawi.systemLocationsTag')"/>
     </macros>
     <!-- Flowsheet table view -->
@@ -89,6 +91,7 @@
                     <td colspan="1" style="padding: 1px" >Fuel used for cooking</td>
                     <td colspan="1" style="padding: 1px" >Type of home flooring</td>
                     <td colspan="1" style="padding: 1px" >Type of walls your house made of</td>
+                    <td colspan="1" style="padding: 1px" >Type of roofing</td>
                 </tr>
             </thead>
             <tbody class="visit-table-body">
@@ -179,6 +182,10 @@
                     <td style="padding: 1px;" >
                         <!-- Age -->
                         <obs conceptId="$typeOfHouseWalls" />
+                    </td>
+                    <td style="padding: 1px;" >
+                        <!-- Age -->
+                        <obs conceptId="$typeOfHouseRoof" />
                     </td>
                 </tr>
             </tbody>
@@ -333,6 +340,12 @@
                     <th>What type of walls does is your house made of?</th>
                     <td>
                         <obs conceptId="$typeOfHouseWalls" style="radio" answerConceptIds="$cement, $mud, $other" />
+                    </td>
+                </tr>
+                <tr class="focus-field">
+                    <th>What type of roof is your house made of?</th>
+                    <td>
+                        <obs conceptId="$typeOfHouseRoof" style="radio" answerConceptIds="$tiles, $grass, $other" />
                     </td>
                 </tr>
             </table>
