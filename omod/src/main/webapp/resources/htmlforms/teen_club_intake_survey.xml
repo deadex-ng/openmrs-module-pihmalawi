@@ -145,6 +145,29 @@
         <macro key="truck" value="05742f26-375a-4e38-b9ee-7c7d0780c538"/>
         <macro key="extracurricular" value="4bd44d80-5409-4c7f-a2d2-d623fdfdfc93"/>
         <macro key="activitiesList" value="a8de56b1-833c-4293-8cc3-1281cd8cbd02"/>
+        <macro key="prevention" value="302b77dd-f922-4f38-8f7a-6f76887dff8f"/>
+        <macro key="condomsuse" value="3fbc0349-56aa-40c2-a03a-517da6aab82c"/>
+        <macro key="abstinence" value="ceb54c50-7376-4449-87a1-f4051edde7e2"/>
+        <macro key="fidelity" value="4c024160-1f3e-4146-8733-4795ed0c445e"/>
+        <macro key="cured" value="0490d7ce-2def-48b0-b113-16e68aa19eba"/>
+        <macro key="healthyPerson" value="626d3564-a7ff-48e4-a869-e3e347d55357"/>
+        <macro key="infectedStudent" value="d3ab4a01-7942-4925-848e-08a894d4c9f0"/>
+        <macro key="punishment" value="da25f6e7-3816-40d7-8d1f-d91f8a157424"/>
+        <macro key="badLuck" value="b317bada-e3fb-403d-bc6e-1d31a1203fbb"/>
+        <macro key="longevity" value="414489ec-b644-4579-a811-853dcdd4cb1e"/>
+        <macro key="afraid" value="ca1fd53c-5de9-4dfd-a106-ecb6fff92f6b"/>
+        <macro key="injectableDrugs" value="abf95156-b5e8-40d7-8935-0ff78513065e"/>
+        <macro key="elicit" value="c0b66f98-7580-4c09-885f-cb4f538e6b2c"/>
+        <macro key="alcoholInfluence" value="bf68d511-2ebf-431e-99dc-e55b38bae7fe"/>
+        <macro key="exchange" value="56c5db66-e09b-4f70-a6e3-5b684ac9c524"/>
+        <macro key="youngerOrOlder" value="98759c39-5164-43fe-99ab-44dffb5cf966"/>
+        <macro key="modelPreference" value="128defcd-deab-4b34-a27d-9aac7e9d767a"/>
+        <macro key="envision" value="aa63bd2e-6117-4106-adf7-e7b81327485a"/>
+        <macro key="parentsCareer" value="afd95534-84e5-4dc7-8170-8da5f325d70a"/>
+        <macro key="homeIncome" value="6d713ae5-457b-414c-a1d3-83a7d945236a"/>
+        <macro key="expectations" value="566efb82-87ed-4008-bedc-87f18662993c"/>
+        <macro key="hopeful" value="03d9656d-07e1-478d-810e-7a21f1cf635c"/>
+        <macro key="enjoyedActivities" value="eda0a5ec-25a3-44d6-9f1b-f45a752d839b"/>
         <macro key="nenoLocations" expression="fn.globalProperty('pihmalawi.systemLocationsTag')"/>
     </macros>
     <!-- Flowsheet table view -->
@@ -186,7 +209,8 @@
                     <td colspan="1" style="padding: 1px" >Type of roofing</td>
                     <td colspan="1" style="padding: 1px" >Enrolled in teen club</td>
                     <td colspan="1" style="padding: 1px" >Purpose of teen club</td>
-                    <td colspan="1" style="padding: 1px" >Teen club activities</td>
+<!--                    <td colspan="1" style="padding: 1px" >Teen club activities</td>-->
+                    <td colspan="1" style="padding: 1px" >Which activity of teen club did you enjoy the most?</td>
                     <td colspan="1" style="padding: 1px" >Teen club topics</td>
                     <td colspan="1" style="padding: 1px" >Happy with teen club</td>
                     <td colspan="1" style="padding: 1px" >Social Support</td>
@@ -199,14 +223,32 @@
                     <td colspan="1" style="padding: 1px" >Challenges you face</td>
                     <td colspan="1" style="padding: 1px" >Rate your HIV knowledge</td>
                     <td colspan="1" style="padding: 1px" >How is HIV transmitted</td>
+                    <td colspan="1" style="padding: 1px" >How is HIV/AIDS prevented?</td>
+                    <td colspan="1" style="padding: 1px" >Can HIV/AIDS be cured?</td>
+                    <td colspan="1" style="padding: 1px" >Can a healthy-looking person have HIV infection?</td>
+                    <td colspan="1" style="padding: 1px" >Should an HIV+ student be allowed to continue studying at your school?</td>
+                    <td colspan="1" style="padding: 1px" >Is HIV a punishment for bad behaviour?</td>
+                    <td colspan="1" style="padding: 1px" >Is HIV just a matter of bad luck?</td>
+                    <td colspan="1" style="padding: 1px" >Can an HIV infected person live longer?</td>
+                    <td colspan="1" style="padding: 1px" >Are people afraid to be around you?</td>
+                    <td colspan="1" style="padding: 1px" >Have you ever used injectable drugs?</td>
+                    <td colspan="1" style="padding: 1px" >Have you ever used elicit drugs?</td>
+                    <td colspan="1" style="padding: 1px" >Do you have sex when you're under the influence of alcohol?</td>
+                    <td colspan="1" style="padding: 1px" >Did you have sex in exchange for money, goods or favor?</td>
+                    <td colspan="1" style="padding: 1px" >Did you ever have sex with someone who is younger or you're older than them by 5 years?</td>
+                    <td colspan="1" style="padding: 1px" >What is the name of the role model in your preferred field?</td>
+                    <td colspan="1" style="padding: 1px" >Why do you prefer him/her?</td>
+                    <td colspan="1" style="padding: 1px" >How do you envision your future after teen club</td>
+                    <td colspan="1" style="padding: 1px" >What is your parent's career today?</td>
+                    <td colspan="1" style="padding: 1px" >What is the main source of income at your home?</td>
+                    <td colspan="1" style="padding: 1px" >Do you expect to be better beyond your current family life?</td>
+                    <td colspan="1" style="padding: 1px" >Do you feel hopeful for your future based on teen club support?</td>
                     <td colspan="1" style="padding: 1px" >Are you thinking about the future</td>
                     <td colspan="1" style="padding: 1px" >Career after school</td>
                     <td colspan="1" style="padding: 1px" >Area of study interest</td>
                     <td colspan="1" style="padding: 1px" >Involved in extracurricular activities or clubs</td>
                     <td colspan="1" style="padding: 1px" >Extracurricular activities or clubs</td>
                     <td colspan="1" style="padding: 1px" >Industries you are curious about</td>
-                    <td colspan="1" style="padding: 1px" >Do you have roles models</td>
-                    <td colspan="1" style="padding: 1px" >Name of model(s)</td>
                     <td colspan="1" style="padding: 1px" >Kind of support you'd like</td>
                     <td colspan="1" style="padding: 1px" >Obtained vocational training</td>
                     <td colspan="1" style="padding: 1px" >What do you want to do</td>
@@ -318,7 +360,7 @@
                         <obs conceptId="$purposeOfTeenClub" />
                     </td>
                     <td style="padding: 1px;" >
-                        <obs conceptId="$teenClubActivities" />
+                        <obs conceptId="$enjoyedActivities" />
                     </td>
                     <td style="padding: 1px;" >
                         <obs conceptId="$teenClubTopics" />
@@ -357,6 +399,67 @@
                         <obs conceptId="$hivTransmission" />
                     </td>
                     <td style="padding: 1px;" >
+                        <obs conceptId="$prevention" />
+                    </td>
+                    <td style="padding: 1px;" >
+                        <obs conceptId="$cured" />
+                    </td>
+                    <td style="padding: 1px;" >
+                        <obs conceptId="$healthyPerson" />
+                    </td>
+                    <td style="padding: 1px;" >
+                        <obs conceptId="$infectedStudent" />
+                    </td>
+                    <td style="padding: 1px;" >
+                        <obs conceptId="$punishment" />
+                    </td>
+                    <td style="padding: 1px;" >
+                        <obs conceptId="$badLuck" />
+                    </td>
+                    <td style="padding: 1px;" >
+                        <obs conceptId="$longevity" />
+                    </td>
+                    <td style="padding: 1px;" >
+                        <obs conceptId="$afraid" />
+                    </td>
+                    <td style="padding: 1px;" >
+                        <obs conceptId="$injectableDrugs" />
+                    </td>
+                    <td style="padding: 1px;" >
+                        <obs conceptId="$elicit" />
+                    </td>
+                    <td style="padding: 1px;" >
+                        <obs conceptId="$alcoholInfluence" />
+                    </td>
+                    <td style="padding: 1px;" >
+                        <obs conceptId="$exchange" />
+                    </td>
+                    <td style="padding: 1px;" >
+                        <obs conceptId="$youngerOrOlder" />
+                    </td>
+                    <td style="padding: 1px;" >
+                        <obs conceptId="$roleModels" />
+                    </td>
+                    <td style="padding: 1px;" >
+                        <obs conceptId="$modelPreference" />
+                    </td>
+
+                    <td style="padding: 1px;" >
+                        <obs conceptId="$envision" />
+                    </td>
+                    <td style="padding: 1px;" >
+                        <obs conceptId="$parentsCareer" />
+                    </td>
+                    <td style="padding: 1px;" >
+                        <obs conceptId="$homeIncome" />
+                    </td>
+                    <td style="padding: 1px;" >
+                        <obs conceptId="$expectations" />
+                    </td>
+                    <td style="padding: 1px;" >
+                        <obs conceptId="$hopeful" />
+                    </td>
+                    <td style="padding: 1px;" >
                         <obs conceptId="$thinkingAboutFuture" />
                     </td>
                     <td style="padding: 1px;" >
@@ -375,18 +478,13 @@
                         <obs conceptId="$industries" />
                     </td>
                     <td style="padding: 1px;" >
-                        <obs conceptId="$haveRoleModels" />
-                    </td>
-                    <td style="padding: 1px;" >
-                        <obs conceptId="$roleModels" />
-                    </td>
-                    <td style="padding: 1px;" >
                         <obs conceptId="$resources" />
                     </td>
                     <td style="padding: 1px;" >
                         <obs conceptId="$gotTraining" />
                     </td>
                     <td style="padding: 1px;" >
+
                         <obs conceptId="$courses" />
                     </td>
                     <td style="padding: 1px;" >
@@ -595,10 +693,17 @@
                         <obs conceptId="$purposeOfTeenClub" style="radio" answerConceptIds="$empowerAdoleToBuildPosRelationships, $improveSelfEsteem, $acquireLifeSkills, $other" />
                     </td>
                 </tr>
+<!--This question has been depreciated-->
+<!--                <tr class="focus-field">-->
+<!--                    <th>What sort of activities do you do at the teen clubs?</th>-->
+<!--                    <td>-->
+<!--                        <obs conceptId="$teenClubActivities" style="radio" answerConceptIds="$games, $drama, $sports,$artSessions, $other" />-->
+<!--                    </td>-->
+<!--                </tr>-->
                 <tr class="focus-field">
-                    <th>What sort of activities do you do at the teen clubs?</th>
+                    <th>Which activity of teen club did you enjoy the most?</th>
                     <td>
-                        <obs conceptId="$teenClubActivities" style="radio" answerConceptIds="$games, $drama, $sports,$artSessions, $other" />
+                        <obs conceptId="$enjoyedActivities" id="enjoyedActivitiesInput"/>
                     </td>
                 </tr>
                 <tr class="focus-field">
@@ -668,6 +773,90 @@
                     </td>
                 </tr>
                 <tr class="focus-field">
+                    <th>How is HIV/AIDS prevented?</th>
+                    <td>
+                        <obs conceptId="$prevention" style="radio" answerConceptIds="$condomsuse, $abstinence, $fidelity, $doNotKNow"/>
+                    </td>
+                </tr>
+                <tr class="focus-field">
+                    <th>Can HIV/AIDS be cured?</th>
+                    <td>
+                        <obs conceptId="$cured" style="radio" answerConceptIds="$yes,$no"/>
+                    </td>
+                </tr>
+                <tr class="focus-field">
+                    <th>Can a healthy-looking person have HIV infection?</th>
+                    <td>
+                        <obs conceptId="$healthyPerson" style="radio" answerConceptIds="$yes,$no"/>
+                    </td>
+                </tr>
+                <tr class="focus-field">
+                    <th>Should an HIV+ student be allowed to continue studying at your school?</th>
+                    <td>
+                        <obs conceptId="$infectedStudent" style="radio" answerConceptIds="$yes,$no"/>
+                    </td>
+                </tr>
+                <tr class="focus-field">
+                    <th>Is HIV a punishment for bad behaviour?</th>
+                    <td>
+                        <obs conceptId="$punishment" style="radio" answerConceptIds="$yes,$no"/>
+                    </td>
+                </tr>
+                <tr class="focus-field">
+                    <th>Is HIV just a matter of bad luck?</th>
+                    <td>
+                        <obs conceptId="$badLuck" style="radio" answerConceptIds="$yes,$no"/>
+                    </td>
+                </tr>
+                <tr class="focus-field">
+                    <th>Can an HIV infected person live longer?</th>
+                    <td>
+                        <obs conceptId="$longevity" style="radio" answerConceptIds="$yes,$no"/>
+                    </td>
+                </tr>
+                <tr class="focus-field">
+                    <th>Are people afraid to be around you?</th>
+                    <td>
+                        <obs conceptId="$afraid" style="radio" answerConceptIds="$yes,$no"/>
+                    </td>
+                </tr>
+                <tr class="focus-field">
+                    <th>Have you ever used injectable drugs?</th>
+                    <td>
+                        <obs conceptId="$injectableDrugs" style="radio" answerConceptIds="$yes,$no"/>
+                    </td>
+                </tr>
+                <tr class="focus-field">
+                    <th>Have you ever used elicit drugs?</th>
+                    <td>
+                        <obs conceptId="$elicit" style="radio" answerConceptIds="$yes,$no"/>
+                    </td>
+                </tr>
+                <tr class="focus-field">
+                    <th>Do you have sex when you're under the influence of alcohol?</th>
+                    <td>
+                        <obs conceptId="$alcoholInfluence" style="radio" answerConceptIds="$yes,$no"/>
+                    </td>
+                </tr>
+                <tr class="focus-field">
+                    <th>Did you have sex in exchange for money, goods or favor?</th>
+                    <td>
+                        <obs conceptId="$exchange" style="radio" answerConceptIds="$yes,$no"/>
+                    </td>
+                </tr>
+                <tr class="focus-field">
+                    <th>Did you have sex in exchange for money, goods or favor?</th>
+                    <td>
+                        <obs conceptId="$exchange" style="radio" answerConceptIds="$yes,$no"/>
+                    </td>
+                </tr>
+                <tr class="focus-field">
+                    <th>Did you ever have sex with someone who is younger or you're older than them by 5 years?</th>
+                    <td>
+                        <obs conceptId="$youngerOrOlder" style="radio" answerConceptIds="$yes,$no"/>
+                    </td>
+                </tr>
+                <tr class="focus-field">
                     <th>Have you started thinking about your future career or job aspirations? </th>
                     <td>
                         <obs conceptId="$thinkingAboutFuture" style="radio" answerConceptIds="$yes, $no"/>
@@ -703,16 +892,53 @@
                         <obs conceptId="$industries" style="radio" answerConceptIds="$healthAndMedicine, $techAndIT, $artsAndDesign, $bsnssAndEntrepreneurship, $other"/>
                     </td>
                 </tr>
+<!--This question has been depreciated -->
+<!--                <tr class="focus-field">-->
+<!--                    <th>Are there any role models or professionals in your desired field that you admire or look up to?</th>-->
+<!--                    <td>-->
+<!--                        <obs conceptId="$haveRoleModels" style="radio" answerConceptIds="$yes, $no"/>-->
+<!--                    </td>-->
+<!--                </tr>-->
                 <tr class="focus-field">
-                    <th>Are there any role models or professionals in your desired field that you admire or look up to?</th>
+                    <th>What is the name of the role model in your preferred field?</th>
                     <td>
-                        <obs conceptId="$haveRoleModels" style="radio" answerConceptIds="$yes, $no"/>
+                        <obs conceptId="$roleModels" id="roleModelsInput"/>
                     </td>
                 </tr>
                 <tr class="focus-field">
-                    <th>What is the name of your role model(s)?</th>
+                    <th>Why do you prefer him/her?</th>
                     <td>
-                        <obs conceptId="$roleModels" id="roleModelsInput"/>
+                        <obs conceptId="$modelPreference" id="modelPreferenceInput"/>
+                    </td>
+                </tr>
+                <tr class="focus-field">
+                    <th>How do you envision your future after teen club?</th>
+                    <td>
+                        <obs conceptId="$envision" id="modelPreferenceInput"/>
+                    </td>
+                </tr>
+                <tr class="focus-field">
+                    <th>What is your parent's career today?</th>
+                    <td>
+                        <obs conceptId="$parentsCareer" id="parentsCareerInput"/>
+                    </td>
+                </tr>
+                <tr class="focus-field">
+                    <th>What is the main source of income at your home?</th>
+                    <td>
+                        <obs conceptId="$homeIncome" id="homeIncomeInput"/>
+                    </td>
+                </tr>
+                <tr class="focus-field">
+                    <th>Do you expect to be better beyond your current family life?</th>
+                    <td>
+                        <obs conceptId="$expectations" id="expectationsInput"/>
+                    </td>
+                </tr>
+                <tr class="focus-field">
+                    <th>Do you feel hopeful for your future based on teen club support?</th>
+                    <td>
+                        <obs conceptId="$hopeful" id="hopefulInput"/>
                     </td>
                 </tr>
                 <tr class="focus-field">
