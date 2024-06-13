@@ -1038,7 +1038,6 @@ public class TeenClubIntakeSurveyConcepts extends VersionedPihConceptBundle {
                 .datatype(text)
                 .conceptClass(misc)
                 .name("9b807d95-03ce-43d6-8fc3-fd6ab5f74e43", "Which activity of teen club did you enjoy the most?", Locale.ENGLISH, ConceptNameType.FULLY_SPECIFIED)
-                .answers(yes, no)
                 .build());
 
     }
