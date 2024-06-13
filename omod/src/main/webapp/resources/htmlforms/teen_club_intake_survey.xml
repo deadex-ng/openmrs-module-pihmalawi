@@ -145,6 +145,7 @@
         <macro key="truck" value="05742f26-375a-4e38-b9ee-7c7d0780c538"/>
         <macro key="extracurricular" value="4bd44d80-5409-4c7f-a2d2-d623fdfdfc93"/>
         <macro key="activitiesList" value="a8de56b1-833c-4293-8cc3-1281cd8cbd02"/>
+<<<<<<< Updated upstream
         <macro key="prevention" value="302b77dd-f922-4f38-8f7a-6f76887dff8f"/>
         <macro key="condomsuse" value="3fbc0349-56aa-40c2-a03a-517da6aab82c"/>
         <macro key="abstinence" value="ceb54c50-7376-4449-87a1-f4051edde7e2"/>
@@ -168,6 +169,9 @@
         <macro key="expectations" value="566efb82-87ed-4008-bedc-87f18662993c"/>
         <macro key="hopeful" value="03d9656d-07e1-478d-810e-7a21f1cf635c"/>
         <macro key="enjoyedActivities" value="eda0a5ec-25a3-44d6-9f1b-f45a752d839b"/>
+=======
+        <macro key="transmissionHIV" value="082df9fd-646f-424b-9a9c-c6a211c56cbd"/>
+>>>>>>> Stashed changes
         <macro key="nenoLocations" expression="fn.globalProperty('pihmalawi.systemLocationsTag')"/>
     </macros>
     <!-- Flowsheet table view -->
@@ -396,7 +400,7 @@
                         <obs conceptId="$rateHIVKnowledge" />
                     </td>
                     <td style="padding: 1px;" >
-                        <obs conceptId="$hivTransmission" />
+                        <obs conceptId="$transmissionHIV" />
                     </td>
                     <td style="padding: 1px;" >
                         <obs conceptId="$prevention" />
@@ -769,7 +773,7 @@
                 <tr class="focus-field">
                     <th>How is HIV transmitted?</th>
                     <td>
-                        <obs conceptId="$hivTransmission" style="radio" answerConceptIds="$mosquitoBite, $kissing, $sexualIntercourse, $bloodTransfusion, $m2cTransmission"/>
+                        <obs conceptId="$transmissionHIV" style="radio" answerConceptIds="$mosquitoBite, $kissing, $sexualIntercourse, $bloodTransfusion, $m2cTransmission"/>
                     </td>
                 </tr>
                 <tr class="focus-field">

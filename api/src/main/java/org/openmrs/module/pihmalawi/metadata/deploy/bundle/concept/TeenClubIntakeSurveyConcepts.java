@@ -876,6 +876,7 @@ public class TeenClubIntakeSurveyConcepts extends VersionedPihConceptBundle {
                 .name("5e2d2334-e0d5-40e2-8a4d-20e53fb0e439", "Current School class", Locale.ENGLISH, ConceptNameType.FULLY_SPECIFIED)
                 .build());
 
+<<<<<<< Updated upstream
         Concept  relevantTopic = install(new ConceptBuilder("80d4f28a-7818-4c34-8e0a-6cc4f81e51c2")
                 .datatype(text)
                 .conceptClass(misc)
@@ -1041,5 +1042,66 @@ public class TeenClubIntakeSurveyConcepts extends VersionedPihConceptBundle {
                 .answers(yes, no)
                 .build());
 
+=======
+        Concept  transmissionHIV = install(new ConceptBuilder("082df9fd-646f-424b-9a9c-c6a211c56cbd")
+                .datatype(text)
+                .conceptClass(misc)
+                .name("2b3bf0e5-7a57-4293-93b3-21dd253ba4a5", "HIV Transmission Answer", Locale.ENGLISH, ConceptNameType.FULLY_SPECIFIED)
+                .build());
+
+        Concept  teensClubSupport = install(new ConceptBuilder("80266d7c-98a9-4c00-8979-ab71a7efe673")
+                .datatype(text)
+                .conceptClass(misc)
+                .name("43428091-7e51-40ff-a661-7809b30dddcb", "Support from Teens Club Answer", Locale.ENGLISH, ConceptNameType.FULLY_SPECIFIED)
+                .build());
+
+        Concept  kindOfSupport = install(new ConceptBuilder("5b202fa4-e047-4ce8-8abc-e298d531d263")
+                .datatype(text)
+                .conceptClass(misc)
+                .name("45261f06-6f81-4df5-bdcf-3daed4ce64e7", "Kind of Support Answer", Locale.ENGLISH, ConceptNameType.FULLY_SPECIFIED)
+                .build());
+
+        Concept  coveredTopics = install(new ConceptBuilder("b41df88d-ecec-4fb9-af69-763dfc4d7552")
+                .datatype(text)
+                .conceptClass(misc)
+                .name("b7b13685-15ce-4e8a-a27f-80808b9011c7", "Topics Covered Answer", Locale.ENGLISH, ConceptNameType.FULLY_SPECIFIED)
+                .build());
+
+        Concept  activitiesAfTeenClub = install(new ConceptBuilder("469844c2-f108-4b14-a8ba-299020b96a08")
+                .datatype(text)
+                .conceptClass(misc)
+                .name("3391350b-9f69-46e4-9b1a-7a27cdc62395", "Teens Club Activities Answer", Locale.ENGLISH, ConceptNameType.FULLY_SPECIFIED)
+                .build());
+
+        Concept  teensClubPurposeAnswer = install(new ConceptBuilder("1082f4ec-9a3c-42b6-a657-71a0f4f8df04")
+                .datatype(text)
+                .conceptClass(misc)
+                .name("a5e4eafc-cb32-42a8-ab9e-10b5791f07ab", "Teens club Purpose: Answer", Locale.ENGLISH, ConceptNameType.FULLY_SPECIFIED)
+                .build());
+
+        Concept  reasonForRoleModel = install(new ConceptBuilder("4cf87c12-dd1f-40ea-bb15-29f81703ffb9")
+                .datatype(text)
+                .conceptClass(misc)
+                .name("36f17918-0520-4377-be7b-7e07213aae22", "Why do you prefer your role model", Locale.ENGLISH, ConceptNameType.FULLY_SPECIFIED)
+                .build());
+
+        Concept  lifeAfterTeenClub = install(new ConceptBuilder("a7387f78-5cb5-455c-84d1-3847312e822a")
+                .datatype(text)
+                .conceptClass(misc)
+                .name("bdeee34b-02ec-40b5-8c6e-890f54843a76", "How do you envision your future after teen club?", Locale.ENGLISH, ConceptNameType.FULLY_SPECIFIED)
+                .build());
+
+        Concept  parentsCareer = install(new ConceptBuilder("e0c89ffe-a8d0-4157-a39b-3815f2988d5a")
+                .datatype(text)
+                .conceptClass(misc)
+                .name("c7a6b884-2d1e-4adc-8683-21f014763fc8", "Your parent's career today?", Locale.ENGLISH, ConceptNameType.FULLY_SPECIFIED)
+                .build());
+
+        Concept  mainIncomeSource = install(new ConceptBuilder("157f1766-6cce-4def-9324-0f060fd9fbbc")
+                .datatype(text)
+                .conceptClass(misc)
+                .name("b3fdf495-ffa8-4f73-a008-4361d7210e5b", "Main source of income at your home?", Locale.ENGLISH, ConceptNameType.FULLY_SPECIFIED)
+                .build());
+>>>>>>> Stashed changes
     }
 }
